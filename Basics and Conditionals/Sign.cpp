@@ -6,17 +6,12 @@ int main()
     cout<<"Enter an integer: ";
     cin>>n;
     if(n<0)
-    {
         cout<<"Negative";
-    }
     else
-    {
         if(n>0)
             cout<<"Positive";
-        else
+    else
             cout<<"Neutral";
-    }
-
     return 0;
 
 }
