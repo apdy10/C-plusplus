@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+bool isPrime(int n) {
+	int d = 2;
+	while (d < n) {
+		if (n % d == 0) {
+			return false;
+		}
+		d++;
+	}
+	return true;
+
+}
+int main() {
+#ifndef ONLINE_JUDGE
+	freopen("input.txt", "r", stdin);
+	freopen("output.txt", "w", stdout);
+#endif
+	int n;
+	cin >> n;
+	for (int x = 2; x <= n; x++) {
+		if (isPrime(x)) {
+			cout << x << endl;
+		}
+
+	}
+}
